@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cada Segundo ao Seu Lado.</title>
+    <style>
+        body {
+            background-color: #FADCD9;
+            font-family: 'Verdana', serif;
+            color: #C62828;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #C62828;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #F28C8C;
+            line-height: 1.5;
+            margin: 0 0 20px 0;
+        }
+
+        .contador {
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .bolha {
+            background-color: #FADCD9;
+            border: 1px solid #FF9AA2;
+            border-radius: 15px;
+            padding: 6px;
+            display: inline-block;
+            position: relative;
+            font-size: 13px;
+            min-width: 80px;
+            text-align: center;
+            margin: 5px;
+            animation: pulse 2s infinite;
+        }
+
+        .bolha.dias {
+            background-color: #FF9AA2;
+        }
+
+        .bolha.horas {
+            background-color: #FF9AA2;
+        }
+
+        .bolha.minutos {
+            background-color: #FF9AA2;
+        }
+
+        .bolha.segundos {
+            background-color: #FF9AA2;
+        }
+
+        .bolha.minutos::after {
+            content: "🩷";
+            position: absolute;
+            top: -12px;
+            right: -5px;
+            font-size: 20px;
+            color: #FF66B2;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            60% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .fotos {
+            margin-top: 30px;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 15px;
+            border: 2px solid #F28C8C;
+        }
+
+        .botoes-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+  
+
+        .botao {
+            display: inline-block;
+            background-color: #F28C8C;
+            color: #FADCD9;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .botao:active {
+            background-color: #F16B6B;
+            transform: scale(0.95);
+        }
+
+        .botao-musica {
+            background-color: #FF9AA2;
+        }
+
+        .botao-musica:active {
+            background-color: #FF6F6F;
+        }
+
+        .botao-mapa {
+            background-color: #FF9AA2;
+        }
+
+        .botao-mapa:active {
+            background-color: #FF9AA2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Te Vivo.🤍</h1>
+    <p>Estamos juntos há:</p>
+    <div class="contador">
+        <div class="bolha dias" id="dias"></div>
+        <div class="bolha horas" id="horas"></div>
+        <div class="bolha minutos" id="minutos"></div>
+        <div class="bolha segundos" id="segundos"></div>
+    </div>
+    <br>
+
+        <p>E, sinceramente, eu não consigo mais me imaginar sem ti ao meu lado. Tu trouxe mais cor e beleza pra minha história, trazendo um amor que eu nem imaginava que poderia receber. </p>
+        <p>Lembro dos primeiros dias que ia pra tua casa, o frio na barriga e a sensação de estar me apaixonando. A gente sempre brincava alguma brincadeira idiota, o que me proporcionava as minhas risadas mais sinceras, esses eram os melhores momentos dos meus dias ao teu lado. Lembro também do nosso primeiro Ano Novo juntos (o primeiro de muitos) quando deu a meia noite e tu tava lá comigo, a sensação gostosa de passar esse momento tão bom com a pessoa que eu mais amo. E das nossas idas à prainha pra tomar chimarrão e conversar. Sempre apreciei muito esses pequenos momentos ao teu lado.
+</p>
+        <p>Eu sou muito grata por te ter na minha vida, pelo teu carinho, paciência e apoio. Pelos nossos momentos de larica (que são alguns dos melhores do nosso dia) e por cada comidinha gostosa que tu faz pra mim.🫶🏼
+</p>
+        <p>Eu prometo, com todo o carinho e sinceridade, que um dia ainda vou ser a tua esposa e mãe das tuas filhas. Estou ansiosa pra todas as aventuras que ainda vamos viver e pra construir um futuro cheio de amor e felicidade juntos.</p>
+        
+        <br>
+
+    <p>“Você é a razão pela qual eu acordo todos os dias e quero lutar por cada momento que temos juntos."🤍</p>
+    
+     <img src="a.jpg" alt="foto 1">
+
+    
+
+
+    
+    <div class="botoes-container">
+        <a href="https://www.google.com/maps/place/R.+Mois%C3%A9s+Ribeiro+da+Silva,+60+-+Centro,+Charqueadas+-+RS,+96745-000" class="botao botao-mapa" target="_blank">Local onde tu disse o primeiro "eu te amo"</a>
+        <a href="https://www.google.com/maps/place/R.+Osvaldo+Aranha,+10+-+Centro,+S%C3%A3o+Jer%C3%B4nimo+-+RS,+96700-000" class="botao botao-mapa" target="_blank">Local onde nos beijamos pela primeira vez</a>
+        <a href="https://open.spotify.com/track/0cP8fL9xvi8OYisR8OJuzN?si=X795pEK6ToWS5OOLzbMLug" class="botao botao-musica" target="_blank">Clique aqui e sinta o que eu sinto por ti!🤍</a>
+
+    </div>
+
+    <script>
+        // Defina a data de início do namoro
+        var dataInicio = new Date("2023-10-22T00:02:10");
+
+        function atualizarContador() {
+            var agora = new Date();
+            var tempoJuntos = agora - dataInicio;
+            
+            var dias = Math.floor(tempoJuntos / (1000 * 60 * 60 * 24));
+            var horas = Math.floor((tempoJuntos % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutos = Math.floor((tempoJuntos % (1000 * 60 * 60)) / (1000 * 60));
+            var segundos = Math.floor((tempoJuntos % (1000 * 60)) / 1000);
+
+            document.getElementById("dias").innerHTML = dias + " dias";
+            document.getElementById("horas").innerHTML = horas + " horas";
+            document.getElementById("minutos").innerHTML = minutos + " minutos";
+            document.getElementById("segundos").innerHTML = segundos + " segundos";
+        }
+
+        setInterval(atualizarContador, 1000);
+    </script>
+</body>
+</html>
