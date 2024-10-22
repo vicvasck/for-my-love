@@ -51,15 +51,21 @@
             animation: pulse 2s infinite;
         }
 
-        .bolha.anos {
+        .bolha.ano {
             background-color: #FF9AA2;
         }
 
-        .bolha.horas {
-            background-color: #FF9AA2;
+        .bolha.horas { :after {
+            content: "🩷";
+            position: absolute;
+            top: -12px;
+            right: -5px;
+            font-size: 20px;
+            color: #FF66B2;
+            
         }
 
-        .bolha.minutos {
+        .bolha.dias {
             background-color: #FF9AA2;
         }
 
@@ -67,13 +73,8 @@
             background-color: #FF9AA2;
         }
 
-        .bolha.minutos::after {
-            content: "🩷";
-            position: absolute;
-            top: -12px;
-            right: -5px;
-            font-size: 20px;
-            color: #FF66B2;
+        .bolha.minutos:
+          background-color: #FF9AA2;
         }
 
         @keyframes pulse {
